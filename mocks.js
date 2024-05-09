@@ -1,6 +1,6 @@
 // https://www.convertcsv.com/csv-to-json.htm
-
-const mocks = [
+// 
+const collection = [
   {
     "Catalog#": "!K7057VHS",
     Artist: "Ken Ishii",
@@ -43865,3 +43865,4 @@ const mocks = [
     "Collection Notes": "",
   },
 ];
+ module.exports = {collection}

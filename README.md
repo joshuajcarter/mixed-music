@@ -25,6 +25,9 @@ Mixed Music
 * list of cool stuff under construction -->
 
 ### Getting started  
+Export your Discogs collection as CSV [here](https://www.discogs.com/users/export)  
+Convert CSV to JSON [here](https://www.convertcsv.com/csv-to-json.htm) and copy  
+In mocks.js replace sample data with your copied JSON 
 ```code
 open 'index.html'
 ```
