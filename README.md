@@ -1,4 +1,4 @@
-Mixed Music 
+Mixed Music - WIP
 =
 ### When you can't decide what to listen to, Mixed Music is here to help! Just enter a year in the search field for a random item from your collection - job done! 
 
@@ -29,7 +29,7 @@ Export your Discogs collection as CSV [here](https://www.discogs.com/users/expor
 Convert CSV to JSON [here](https://www.convertcsv.com/csv-to-json.htm) and copy  
 In mocks.js replace sample data with your copied JSON 
 ```code
-open 'index.html'
+open 'index.html' // coming soon!
 ```
 
 <!-- 
