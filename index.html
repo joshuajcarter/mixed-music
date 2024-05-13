@@ -7,6 +7,17 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>Mixed Music</h1>
+  <p>When you can't decide what to listen to, Mixed Music is here to help!<br> Just search by year for a random item from your collection - job done!</p>
   
+  <form>
+    <label>
+      <div id="yearRange"></div>
+      <input type="text" id="year" name="year" required minlength="4" maxlength="4" size="10" />
+    </label>
+    <button>Go</button>
+  </form>
+  <div id="random-item"></div>
 </body>
+<script type="module" src="./app.js"></script>
 </html>

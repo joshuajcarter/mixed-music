@@ -1,5 +1,5 @@
 // https://www.convertcsv.com/csv-to-json.htm
-// 
+
 const collection = [
   {
     "Catalog#": "!K7057VHS",
@@ -43864,5 +43864,5 @@ const collection = [
     "Collection Sleeve Condition": "",
     "Collection Notes": "",
   },
-];
- module.exports = {collection}
+ ];
+export default collection
