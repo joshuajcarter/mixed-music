@@ -1,4 +1,4 @@
-const {collection} = require('./mocks')
+import collection from "./mocks.js";
 
 // helper filters collection by release year
 function getAllReleases(num) {
@@ -6,7 +6,6 @@ function getAllReleases(num) {
   return res
 }
 
-// create index.html onload input instruction
 function getYearRange(arr) {
   let range = []
   arr.forEach(el =>  {if (el.Released > 0) range.push(el.Released)})
@@ -16,13 +15,22 @@ function getYearRange(arr) {
   return `Pick a year between ${rangeStart} - ${rangeEnd}`
 }
 
-// executed on index.html button click
 function getRandomItem(num) {
-  let res = getAllReleases(num)
-  let random = res[Math.floor(Math.random() * res.length)];
-  console.log(`Here's a selection from ${num}`)
-  return { Artist: random.Artist, Title: random.Title }
+  if (typeof (num) != Number && num.toString().length != 4) {
+    window.alert('Please enter a year YYYY')
+  } else {
+    let res = getAllReleases(num)
+    let obj = {
+      Artist: '',
+      Title: ''
+    }
+    let random = res[Math.floor(Math.random() * res.length)];
+    console.log(`Here's a selection from ${num}`)
+    obj.Artist = random.Artist;
+    obj.Title = random.Title;
+    return `Here's a selection from ${num}<br>Artist: ${obj.Artist}<br> Title: ${obj.Title} `;
+  }
 }
+// TODO handle undefined on invalid input
 
-console.log(getYearRange(collection))
-console.log(getRandomItem(1988))
+export { getAllReleases, getYearRange, getRandomItem };

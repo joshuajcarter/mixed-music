@@ -29,8 +29,10 @@ Export your Discogs collection as CSV [here](https://www.discogs.com/users/expor
 Convert CSV to JSON [here](https://www.convertcsv.com/csv-to-json.htm) and copy  
 In mocks.js replace sample data with your copied JSON 
 ```code
-open 'index.html' // coming soon!
+open MIXED-MUSIC folder with VSCode
+Click 'Go Live' to run the live server
 ```
+<!-- open 'index.html' // coming soon! -->
 
 <!-- 
 
