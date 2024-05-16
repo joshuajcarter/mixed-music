@@ -11,9 +11,18 @@ const button = document.querySelector("button");
 
 button.addEventListener("click", (event) => {
   event.preventDefault();
-  console.log('clicked');
-  const year = Number(document.getElementById('year').value)
-  console.log(year)
-  let randomItem = getRandomItem(year);
-  document.getElementById("random-item").innerHTML = randomItem
+  const year = Number(document.getElementById('year').value);
+  let icon = document.getElementById("icon")
+  let randomItemContent = document.getElementById("random-item");
+  if (icon.style.display == "none" && randomItemContent.style.display === "block"){
+  icon.style.display = "block"; randomItemContent.style.display = "none"
+  };
+  icon.classList.add("fa-shake");
+  setTimeout(() => {
+    let randomItem = getRandomItem(year);
+    randomItemContent.innerHTML = randomItem;
+    icon.classList.remove('fa-shake');
+    icon.style.display = 'none'
+    randomItemContent.style.display = 'block'
+  }, 1700);
 });
