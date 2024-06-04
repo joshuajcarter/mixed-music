@@ -1,0 +1,15 @@
+{
+  "name": "mixed-music",
+  "version": "1.0.0",
+  "description": "Mixed Music - WIP = ### When you can't decide what to listen to, Mixed Music is here to help! Just enter a year in the search field for a random item from your collection - job done!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
