@@ -10,7 +10,6 @@ Mixed Music - WIP
 
 <!-- 
 ### Image
-![Sonny and Mariel high fiving.](https://content.codecademy.com/courses/learn-cpp/community-challenge/highfive.gif)  
 ```code
 ![Alt text](URL or file path)  
 ``` -->
@@ -25,14 +24,21 @@ Mixed Music - WIP
 * list of cool stuff under construction -->
 
 ### Getting started  
-Export your Discogs collection as CSV [here](https://www.discogs.com/users/export)  
-Convert CSV to JSON [here](https://www.convertcsv.com/csv-to-json.htm) and copy  
-In mocks.js replace sample data with your copied JSON 
 ```code
-open MIXED-MUSIC folder with VSCode
-Click 'Go Live' to run the live server
+git clone git@github.com:joshuajcarter/mixed-music.git
 ```
-<!-- open 'index.html' // coming soon! -->
+Export your Discogs collection as CSV [here](https://www.discogs.com/users/export)  
+Convert CSV to JSON [here](https://www.convertcsv.com/csv-to-json.htm)   
+In mocks.js replace sample data with your own JSON 
+
+In terminal cd to mixed-music  
+```code
+npm i
+npm start
+``` 
+
+Go to localhost:3000 in your favourite browser.
+
 
 <!-- 
 
